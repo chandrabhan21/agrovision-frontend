@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Check Plant | AgroVision AI</title>
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="nav-left">
+    <i class="fa-solid fa-seedling logo-icon"></i>
+    <span class="brand">AgroVision AI</span>
+  </div>
+
+  <div class="nav-center">
+    <a href="home.html" class="nav-link">Home</a>
+    <a href="about.html" class="nav-link">About</a>
+    <a href="support.html" class="nav-link">Support</a>
+    <a href="check-plant.html" class="nav-link active">Check Plant</a>
+  </div>
+
+  <div class="nav-right">
+    <button id="logoutBtn" class="logout-btn">
+      <i class="fa-solid fa-right-from-bracket"></i> Logout
+    </button>
+  </div>
+</nav>
+
+<div class="page-hero detect-card">
+  <h1>Upload Plant Image 🌱</h1>
+
+  <input type="file" id="imageInput" accept="image/*">
+  <img id="preview" style="display:none;">
+
+  <button id="predictBtn">Predict Disease</button>
+  <div id="result"></div>
+</div>
+
+<div class="chatbot">
+  <i class="fa-solid fa-comments"></i>
+</div>
+
+<script src="navbar.js"></script>
+<script src="protect-page.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+<script src="checkplant.js"></script>
+</body>
+</html>
